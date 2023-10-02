@@ -1,0 +1,15 @@
+* {
+    transition: all 0.2s ease-in-out;
+}
+
+.wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn-container {
+    display: flex;
+    justify-content: space-between;
+}

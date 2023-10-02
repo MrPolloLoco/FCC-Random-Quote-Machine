@@ -1,0 +1,72 @@
+React Notes:
+
+useEffect:
+
+// When you use the react prefix you are importing the entire library.
+// When you use destructuring you importing just the part of the library you need!!
+// Apprently they are the same in terms of functionalty and perfomance!!
+// In addition, you dont need to import react from react, (correction its very ambiguous of when to use it and when not to use it)!
+
+// Here we will cover the useEffect hook!
+// This hook runs a function every render of the component.
+// Understand that your component renders initially when it first loads to the DOM!
+// Renders also happen when the state changes!!
+
+// The useEffect hook is used to run code on every render!!
+// We dont store useEffect in a constant! Becuase it does not return anything to us!
+// We just need to pass an argument thats a function!!
+// This is the function thats going to run every time their is a re-render!!
+
+Asynchronous function:
+
+// A way to seperate the execution of code into multiple tasks that can run independently of each other!!
+// Meaning, no waiting for one task to finsh before another can begin!!
+
+Fetch Api:
+
+// This is a native aplication programming interface that is now built into the language!
+// This is also implementing the promise api under the hood.
+// This api is just a function we call ex: fetch();
+// Here we pass in an argument that is the soruce we want to fetch! Ex: fetch('folder/file.js');
+// This function returns to us a promise.
+// A promise is saying that at some point it will resolve if it has a success or reject if theirs an error!!
+// You can appendix the (.then) method to fire a function when you have a success case!!
+// The (.catch) method will fire when theirs an error!
+// With a promise you will only get rejected if their is a network error that does not allow it to resolve.
+// This is because it resolves even if its right or wrong, meaning it gives you a response regardless.
+// The (await) keyword is used because fetch returns a promise and needs it to work properly with async!!
+// Using an empty array braket in the second parameter in this context allows only one response to return!
+
+json() Method:
+
+// Imporatant, the result is not JSON!! Instead the result of taking JSON as input and parsing it to produce a JavaScript object!!
+// This means that it takes the syntax/format of how json is written and gives you back a JS object!!
+
+Math.floor():
+
+// This method will round a number down to the nearest integer!!
+// Ex: Math.floor(1.6) = 1.
+
+Math.random():
+
+// This method will return a number between 0 and 1 (but not including 1).
+// When you multiply this method by an integer you change the range in which it returns a number from!!
+// Ex: Math.random() * 10 = a random number between 0 and 10.
+
+{quotes.map(quote => (
+            <div>{quote.text}</div>
+          ))}
+
+encodeURIComponent() function:
+
+// encodeURIComponent - encodes all characters except:
+     A-Z a-z 0-9 - _ . ! ~ * ' ().
+     This method will take almost everything including the URL and turn it into the percentage sign encoding!!
+     Used mostly for encoding the query parameters at the end of a URL.
+     Allows you to encode data you might want to send to a server in a usable URL Format!!
+     Seems to revolve around interpretation, making sure that specail charaters are being interpreted correctly in a URL!
+     URL's cannot contain spaces!! This why the encoding needs to take place!
+     URL encoding replaces unsafe ASCII characters with a "%" followed by two hexadecimal digits.
+     This function lets you send data as a URL!!
+
+
